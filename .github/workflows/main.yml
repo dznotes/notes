@@ -34,7 +34,7 @@ jobs:
           TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           REF: github.com/${{ github.repository }}.git
           MYEMAIL: zhi1125272962@qq.com                  # ！！记得修改为自己github设置的邮箱
-          MYNAME: ${{ github.repository_owner }}
+          MYNAME: Zhi2014
         run: |
           cd _book
           git config --global init.defaultBranch master
