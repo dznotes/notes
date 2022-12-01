@@ -1,6 +1,9 @@
 # git
-## 参考
+
+## 文档参考
+
 ## git安装
+
 ### Mac 安装
 ```bash
 brew install git
@@ -11,6 +14,7 @@ sudo apt-get install git
 ```
 
 ## git-ssh-key
+
 ### 生成步骤
 ```bash
 git config --global user.name "xx"
@@ -29,3 +33,5 @@ ssh-keygen -t rsa
 # 查看
 cat ~/.ssh/id_rsa.pub
 ```
+
+## git-常用命令

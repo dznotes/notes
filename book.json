@@ -1,6 +1,5 @@
 {
   "plugins": [
-    "summary",
     "-lunr",
     "-search",
     "search-pro",
