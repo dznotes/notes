@@ -1,14 +1,15 @@
 {
   "plugins": [
-    "-lunr",
-    "-search",
-    "search-pro",
+
     "back-to-top-button",
     "chapter-fold",
     "code",
+    "-lunr",
+    "page-toc-button",
+    "-search",
+    "search-pro",
     "splitter",
-    "tbfed-pagefooter",
-    "page-toc-button"
+    "tbfed-pagefooter"
   ],
   "pluginsConfig": {
     "tbfed-pagefooter": {
