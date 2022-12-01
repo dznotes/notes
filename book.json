@@ -1,6 +1,9 @@
 {
   "plugins": [
-    "-lunr", "-search", "search-pro",
+    "summary",
+    "-lunr",
+    "-search",
+    "search-pro",
     "back-to-top-button",
     "chapter-fold",
     "code",
