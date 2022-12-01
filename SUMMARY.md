@@ -1,8 +1,6 @@
-# 目录
-## 常用工具目录
-- git
+* [Introduction](README.md)
+* 日常工具
+    - [git](tool/git/git.md)
+* python
 
-## python
-
-
-## golang
+* golang
