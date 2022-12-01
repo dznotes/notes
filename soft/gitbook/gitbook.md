@@ -1,10 +1,10 @@
 # gitbook
 
-## 文档参考
+## gitbook-文档参考
 - [Mac中安装和使用GitBook](https://xiaochaowei.com/2020/01/10/InstallGitBookOnMAC/)
 - [gitbook 发布 github pages](https://blog.csdn.net/xixihahalelehehe/article/details/125115061)
 
-## git安装
+## gitbook-安装
 
 ### Mac安装
 
