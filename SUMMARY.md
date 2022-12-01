@@ -23,9 +23,13 @@
     - [redis-cli](db/redis/redis-cli.md)
     - [redis-gui](db/redis/redis-gui.md)
   
-* [python](python/python.md)
+
   
 * [golang](golang/golang.md)
   - [golang-环境搭建](golang/golang-install.md)
+
+* [python](python/python.md)
+
+* [nodejs](nodejs/nodejs.md)
   
 * [mac](mac/mac.md)
