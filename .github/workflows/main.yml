@@ -9,24 +9,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout master
+      - name: checkout master（1、切换到master）
         uses: actions/checkout@v2
         with:
           ref: master
 
-      - name: install nodejs
+      - name: install nodejs（2、安装nodejs）
         uses: actions/setup-node@v1
 
-      - name: configue gitbook
+      - name: configue gitbook（3、安装gitbook-cli，安装插件）
         run: |
           npm install -g gitbook-cli
           gitbook install
 
-      - name: generate _book folder
+      - name: generate _book folder（4、使用build生成html）
         run: |
           gitbook build
 
-      - name: push _book to branch gh-pages
+      - name: push _book to branch gh-pages（5、推送代码到指定分支）
         env:
           TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           REF: github.com/${{ github.repository }}.git
