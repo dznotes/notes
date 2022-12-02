@@ -1,6 +1,6 @@
 # git
 
-## 文档参考
+## git-文档参考
 
 ## git安装
 
@@ -35,3 +35,18 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 ## git-常用命令
+
+## git-gui
+
+- sourcetree官网：https://www.sourcetreeapp.com/
+
+## git-问题解决
+
+### OpenSSL SSL_connect报错
+
+- 问题描述：OpenSSL SSL_connect: Connection was reset in connection to github.com:443
+- 问题解决
+
+```bash
+git config --global http.sslVerify false
+```
