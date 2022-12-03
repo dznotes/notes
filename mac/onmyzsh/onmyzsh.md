@@ -1,14 +1,19 @@
 # onmyzsh
 
+## onmyzsh-文档参考
+
+- 官网：https://ohmyz.sh/
+
 ## onmyzsh-安装
 
 ### mac安装
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+## onmyzsh-常用插件
 
-## onmyzsh 插件安装
+## onmyzsh-插件安装
 
 ```bash
 cd
@@ -23,3 +28,5 @@ cd
 vim .zshrc
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 ```
+
+

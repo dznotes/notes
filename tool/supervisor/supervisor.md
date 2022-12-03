@@ -64,5 +64,4 @@ stdout_logfile=logfile        ; 指定日志文件
 | ----------- | ----------------------------------- | ---------------- |
 | autorestart | 程序异常退出后自动重启              | autorestart=True |
 | autostart   | 在 supervisord 启动的时候也自动启动 | autostart=True   |
-|             |                                     |                  |
 
