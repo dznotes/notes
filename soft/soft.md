@@ -1,2 +1,9 @@
 # 常用软件
-- gitbook
+- docker
+- k8s
+- grafana
+- prometheus
+- nacos
+- etcd
+- consul
+- grpc
