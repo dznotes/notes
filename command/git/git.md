@@ -10,10 +10,13 @@
 ## git安装
 
 ### Mac 安装
+
 ```bash
 brew install git
 ```
+
 ### Ubuntu安装
+
 ```bash
 sudo apt-get install git
 ```
@@ -21,6 +24,7 @@ sudo apt-get install git
 ## git-ssh-key
 
 ### 生成步骤
+
 ```bash
 git config --global user.name "xx"
 git config --global user.email "xx@xx.com"
@@ -50,7 +54,7 @@ ssh -T git@github.com
 
 
 | 命令                                    | 含义                                              |
-| --------------------------------------- | :------------------------------------------------ |
+| :--------------------------------------- | :------------------------------------------------ |
 | **创建**                                |                                                   |
 | git init                                | 初始化本地git仓库，使用当前目录作为git仓库        |
 | git init xx_name                        | 使用指定名称作为git仓库                           |

@@ -53,4 +53,18 @@ http://localhost:4000
 
 | 插件 | 说明                  |
 | :--- | :--------------------- |
-| Code | 代码添加行号&复制按钮 |
+| back-to-top-button | 返回顶部 |
+| chapter-fold |  |
+| code | 代码添加行号&复制按钮 |
+| copy-code-button | 代码复制按钮 |
+| search | 默认搜索（不支持中文） |
+| search-pro | 高级搜索（支持中文，关闭 -lunr、-search） |
+| splitter | 侧边栏宽度调整 |
+| tbfed-pagefooter | 页面添加页脚 |
+
+### gitbook-常见主题
+
+| 插件           | 说明     |
+| :------------- | :------- |
+| theme-default  | 默认主题 |
+| theme-comscore | 彩色标题 |

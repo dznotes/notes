@@ -2,8 +2,22 @@
 
 ## docker-文档参考
 
+- 开始：https://www.docker.com/get-started
+- 个人主页：https://hub.docker.com/
 
 ## docker-常用命令
+
+| 命令             | 含义                                          |      |
+| :---------------- | :-------------------------------------------- | ---- |
+| docker help      | 查看帮助                                      |      |
+| docker version   | 展示docker版本信息。                          |      |
+| docker info      | 显示系统范围的信息。                          |      |
+| docker ps        | 列出容器。                                    |      |
+| docker ps -a     | 列出容器。 -a：显示所有的容器，包括未运行的。 |      |
+| docker search xx | 从Docker Hub查找镜像。                        |      |
+| docker pull xx   |                                               |      |
+
+
 
 ```bash
 Management Commands:

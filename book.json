@@ -1,25 +1,26 @@
 {
   "plugins": [
-
     "back-to-top-button",
     "chapter-fold",
     "code",
-    "-lunr",
+    "copy-code-button",
     "page-toc-button",
+    "-lunr",
     "-search",
     "search-pro",
     "splitter",
-    "tbfed-pagefooter"
+    "tbfed-pagefooter",
+    "theme-comscore"
   ],
   "pluginsConfig": {
     "tbfed-pagefooter": {
-      "copyright": "Copyright &copy Zhi2014 2022",
+      "copyright": "Copyright &copy Zhi2014 2023",
       "modify_label": "该文件修订时间：",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
     "page-toc-button": {
       "maxTocDepth": 5,
-      "minTocSize":2
+      "minTocSize":3
     }
   }
 }

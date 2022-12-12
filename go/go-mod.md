@@ -10,6 +10,7 @@
   - 如果代码在gopath下，则自动使用gopath模式；
   - 如果代码不在gopath下，则自动使用go mod模式。
 
+
 ```bash
 # 设置环境变量
 go env -w GO111MODULE=on
@@ -17,6 +18,16 @@ go env -w GO111MODULE=off
 go env -w GO111MODULE=auto
 ```
 
+### go-proxy
+
+- 代理地址：https://goproxy.cn
+- 代理地址：https://goproxy.io
+
+```bash
+
+$ go env -w GOPROXY=https://goproxy.cn,direct
+https://goproxy.cn,https://goproxy.io,direct
+```
 
 
 ## go-mod-常用命令
@@ -40,6 +51,7 @@ go env -w GO111MODULE=auto
 | go get -u xx                            | 更新依赖到最新版本                                           |
 | go get -u xx@v1.xxx.yy                  | 更新到指定版本                                               |
 | go help mod                             | 查看mod帮助                                                  |
+
 
 
 ```bash

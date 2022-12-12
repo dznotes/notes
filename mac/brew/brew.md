@@ -30,3 +30,18 @@ source .zlogin
 cd /usr/local/Cellar
 
 ```
+
+## brew-常用命令
+
+| 命令           |      |      |
+| :------------- | ---- | ---- |
+| brew search    |      |      |
+| brew info      |      |      |
+| brew install   |      |      |
+| brew update    |      |      |
+| brew upgrade   |      |      |
+| brew uninstall |      |      |
+| brew list      |      |      |
+| brew config    |      |      |
+| brew           |      |      |
+
