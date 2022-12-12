@@ -91,6 +91,7 @@ ssh -T git@github.com
 | **撤销**                                |                                                   |
 | git reset --hard                        | 将当前版本重置为HEAD                              |
 | git reset --hard commit_id              | 将当前版本重置为指定commit_id                     |
+| git reset --soft HEAD^ | 撤销当前已经提交的commit |
 | git revert commit_id                    | 撤销提交                                          |
 | **合并**                                |                                                   |
 | git merge xx_branch_name                | 合并分支到当前分支，2个分支                       |
