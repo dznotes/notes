@@ -31,3 +31,26 @@
 - Visualize call graph of a Go program using Graphviz：https://github.com/ofabry/go-callvis
 
 ### 日志
+
+## go-问题解决
+
+### golang.org/x/..包导入问题
+
+- 解决思路：golang在github上建立了一个镜像库，下载github上的镜像库放入GOPATH下即可
+
+```bash
+mkdir -p $GOPATH/src/golang.org/x
+cd $GOPATH/src/golang.org/x
+git clone https://github.com/golang/sync.git
+git clone https://github.com/golang/crypto.git
+git clone https://github.com/golang/sys.git
+git clone https://github.com/golang/net.git 
+git clone https://github.com/golang/time.git
+git clone https://github.com/golang/text.git
+git clone https://github.com/golang/term.git
+git clone https://github.com/golang/oauth2.git
+
+cd $GOPATH/src/google.golang.org
+git clone https://github.com/protocolbuffers/protobuf-go.git
+mv protobuf-go protobuf
+```

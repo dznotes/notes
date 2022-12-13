@@ -77,6 +77,7 @@
 
 * [python](python/python.md)
   * [python-环境搭建](python/python-install.md)  
+  * [python-pip](python/python-pip.md)  
   * [python-jupyter](python/python-jupyter.md)  
 
 * [nodejs](nodejs/nodejs.md)

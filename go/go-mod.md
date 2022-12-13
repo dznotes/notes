@@ -20,8 +20,9 @@ go env -w GO111MODULE=auto
 
 ### go-proxy
 
-- 代理地址：https://goproxy.cn
-- 代理地址：https://goproxy.io
+- https://goproxy.cn
+- https://goproxy.io
+- https://proxy.golang.org
 
 ```bash
 
