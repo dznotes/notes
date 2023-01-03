@@ -1,0 +1,1561 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>telnet · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../netcat/netcat.html" />
+    
+    
+    <link rel="prev" href="../netstat/netstat.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../command.html">
+            
+                <a href="../command.html">
+            
+                    
+                    命令工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../git/git.html">
+            
+                <a href="../git/git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../curl/curl.html">
+            
+                <a href="../curl/curl.html">
+            
+                    
+                    curl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../wget/wget.html">
+            
+                <a href="../wget/wget.html">
+            
+                    
+                    wget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../tree/tree.html">
+            
+                <a href="../tree/tree.html">
+            
+                    
+                    tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../netstat/netstat.html">
+            
+                <a href="../netstat/netstat.html">
+            
+                    
+                    netstat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="telnet.html">
+            
+                <a href="telnet.html">
+            
+                    
+                    telnet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../netcat/netcat.html">
+            
+                <a href="../netcat/netcat.html">
+            
+                    
+                    netcat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../ps/ps.html">
+            
+                <a href="../ps/ps.html">
+            
+                    
+                    ps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../top/top.html">
+            
+                <a href="../top/top.html">
+            
+                    
+                    top
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../supervisor/supervisor.html">
+            
+                <a href="../supervisor/supervisor.html">
+            
+                    
+                    supervisor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../tool/tool.html">
+            
+                <a href="../../tool/tool.html">
+            
+                    
+                    开发工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../tool/gitbook/gitbook.html">
+            
+                <a href="../../tool/gitbook/gitbook.html">
+            
+                    
+                    gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../tool/postman/postman.html">
+            
+                <a href="../../tool/postman/postman.html">
+            
+                    
+                    postman
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../tool/vscode/vscode.html">
+            
+                <a href="../../tool/vscode/vscode.html">
+            
+                    
+                    vscode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../tool/vscode/vscode-install.html">
+            
+                <a href="../../tool/vscode/vscode-install.html">
+            
+                    
+                    vscode-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../tool/switchhosts/switchhosts.html">
+            
+                <a href="../../tool/switchhosts/switchhosts.html">
+            
+                    
+                    switchhosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../soft/soft.html">
+            
+                <a href="../../soft/soft.html">
+            
+                    
+                    开发软件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../soft/docker/docker.html">
+            
+                <a href="../../soft/docker/docker.html">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../soft/docker/docker-install.html">
+            
+                <a href="../../soft/docker/docker-install.html">
+            
+                    
+                    docker-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../soft/k8s/k8s.html">
+            
+                <a href="../../soft/k8s/k8s.html">
+            
+                    
+                    k8s
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../soft/elasticsearch/elasticsearch.html">
+            
+                <a href="../../soft/elasticsearch/elasticsearch.html">
+            
+                    
+                    elasticsearch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../soft/elasticsearch/elasticsearch-install.html">
+            
+                <a href="../../soft/elasticsearch/elasticsearch-install.html">
+            
+                    
+                    elasticsearch-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../../soft/elasticsearch/elasticsearch-go.html">
+            
+                <a href="../../soft/elasticsearch/elasticsearch-go.html">
+            
+                    
+                    elasticsearch-go
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../soft/grafana/grafana.html">
+            
+                <a href="../../soft/grafana/grafana.html">
+            
+                    
+                    grafana
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="../../soft/grafana/grafana-install.html">
+            
+                <a href="../../soft/grafana/grafana-install.html">
+            
+                    
+                    grafana-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../soft/prometheus/prometheus.html">
+            
+                <a href="../../soft/prometheus/prometheus.html">
+            
+                    
+                    prometheus
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="../../soft/prometheus/prometheus-install.html">
+            
+                <a href="../../soft/prometheus/prometheus-install.html">
+            
+                    
+                    prometheus-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../soft/nacos/nacos.html">
+            
+                <a href="../../soft/nacos/nacos.html">
+            
+                    
+                    nacos
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="../../soft/nacos/nacos-go.html">
+            
+                <a href="../../soft/nacos/nacos-go.html">
+            
+                    
+                    nacos-go
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../soft/etcd/etcd.html">
+            
+                <a href="../../soft/etcd/etcd.html">
+            
+                    
+                    etcd
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.7.1" data-path="../../soft/etcd/etcd-install.html">
+            
+                <a href="../../soft/etcd/etcd-install.html">
+            
+                    
+                    etcd-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7.2" data-path="../../soft/etcd/etcd-etcdctl.html">
+            
+                <a href="../../soft/etcd/etcd-etcdctl.html">
+            
+                    
+                    etcdctl
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../../soft/consul/consul.html">
+            
+                <a href="../../soft/consul/consul.html">
+            
+                    
+                    consul
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.8.1" data-path="../../soft/consul/consul-install.html">
+            
+                <a href="../../soft/consul/consul-install.html">
+            
+                    
+                    consul-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../../soft/grpc/grpc.html">
+            
+                <a href="../../soft/grpc/grpc.html">
+            
+                    
+                    grpc
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.9.1" data-path="../../soft/grpc/grpc-install.html">
+            
+                <a href="../../soft/grpc/grpc-install.html">
+            
+                    
+                    grpc-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.2" data-path="../../soft/grpc/grpc-protoc.html">
+            
+                <a href="../../soft/grpc/grpc-protoc.html">
+            
+                    
+                    grpc-protoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.3" data-path="../../soft/grpc/grpc-protoc-gen-go.html">
+            
+                <a href="../../soft/grpc/grpc-protoc-gen-go.html">
+            
+                    
+                    grpc-protoc-gen-go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.4" data-path="../../soft/grpc/grpc.html">
+            
+                <a href="../../soft/grpc/grpc.html">
+            
+                    
+                    grpc-测试工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.9.4.1" data-path="../../soft/grpc/grpc-tool-ghz.html">
+            
+                <a href="../../soft/grpc/grpc-tool-ghz.html">
+            
+                    
+                    grpc-ghz
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.4.2" data-path="../../soft/grpc/grpc-tool-grpcurl.html">
+            
+                <a href="../../soft/grpc/grpc-tool-grpcurl.html">
+            
+                    
+                    grpc-grpcurl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.4.3" data-path="../../soft/grpc/grpc-tool-grpcui.html">
+            
+                <a href="../../soft/grpc/grpc-tool-grpcui.html">
+            
+                    
+                    grpc-grpcui
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.4.4" data-path="../../soft/grpc/grpc-tool-grpcox.html">
+            
+                <a href="../../soft/grpc/grpc-tool-grpcox.html">
+            
+                    
+                    grpc-grpcox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.4.5" data-path="../../soft/grpc/grpc-tool-bloomrpc.html">
+            
+                <a href="../../soft/grpc/grpc-tool-bloomrpc.html">
+            
+                    
+                    grpc-bloomrpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../db/db.html">
+            
+                <a href="../../db/db.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../db/redis/redis.html">
+            
+                <a href="../../db/redis/redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../../db/redis/redis-install.html">
+            
+                <a href="../../db/redis/redis-install.html">
+            
+                    
+                    redis-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../../db/redis/redis-cli.html">
+            
+                <a href="../../db/redis/redis-cli.html">
+            
+                    
+                    redis-cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../../db/redis/redis-gui.html">
+            
+                <a href="../../db/redis/redis-gui.html">
+            
+                    
+                    redis-gui
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="../../db/redis/redis-go-redis.html">
+            
+                <a href="../../db/redis/redis-go-redis.html">
+            
+                    
+                    redis-go-redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../db/mysql/mysql.html">
+            
+                <a href="../../db/mysql/mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../db/mysql/mysql-install.html">
+            
+                <a href="../../db/mysql/mysql-install.html">
+            
+                    
+                    mysql-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../../db/mysql/mysql-gui.html">
+            
+                <a href="../../db/mysql/mysql-gui.html">
+            
+                    
+                    mysql-gui
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../../db/mysql/mysql-go-xorm.html">
+            
+                <a href="../../db/mysql/mysql-go-xorm.html">
+            
+                    
+                    mysql-go-xorm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../db/postgresql/postgresql.html">
+            
+                <a href="../../db/postgresql/postgresql.html">
+            
+                    
+                    postgresql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../db/postgresql/postgresql-install.html">
+            
+                <a href="../../db/postgresql/postgresql-install.html">
+            
+                    
+                    postgresql-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../db/postgresql/postgresql-gui.html">
+            
+                <a href="../../db/postgresql/postgresql-gui.html">
+            
+                    
+                    postgresql-gui
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../mq/mq.html">
+            
+                <a href="../../mq/mq.html">
+            
+                    
+                    消息队列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../mq/kafka/kafka.html">
+            
+                <a href="../../mq/kafka/kafka.html">
+            
+                    
+                    kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../mq/rocketmq/rocketmq.html">
+            
+                <a href="../../mq/rocketmq/rocketmq.html">
+            
+                    
+                    rocketmq
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../../mq/rocketmq/rocketmq-install.html">
+            
+                <a href="../../mq/rocketmq/rocketmq-install.html">
+            
+                    
+                    rocketmq-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../go/go.html">
+            
+                <a href="../../go/go.html">
+            
+                    
+                    go
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../go/go-install.html">
+            
+                <a href="../../go/go-install.html">
+            
+                    
+                    go-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../go/go-mod.html">
+            
+                <a href="../../go/go-mod.html">
+            
+                    
+                    go-mod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../go/go-pprof.html">
+            
+                <a href="../../go/go-pprof.html">
+            
+                    
+                    go-pprof
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../python/python.html">
+            
+                <a href="../../python/python.html">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../python/python-install.html">
+            
+                <a href="../../python/python-install.html">
+            
+                    
+                    python-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../python/python-pip.html">
+            
+                <a href="../../python/python-pip.html">
+            
+                    
+                    python-pip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../python/python-jupyter.html">
+            
+                <a href="../../python/python-jupyter.html">
+            
+                    
+                    python-jupyter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../nodejs/nodejs.html">
+            
+                <a href="../../nodejs/nodejs.html">
+            
+                    
+                    nodejs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../nodejs/nodejs-install.html">
+            
+                <a href="../../nodejs/nodejs-install.html">
+            
+                    
+                    nodejs-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../nodejs/nvm.html">
+            
+                <a href="../../nodejs/nvm.html">
+            
+                    
+                    nvm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../php/php.html">
+            
+                <a href="../../php/php.html">
+            
+                    
+                    php
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../php/php-install.html">
+            
+                <a href="../../php/php-install.html">
+            
+                    
+                    php-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../php/php-compose.html">
+            
+                <a href="../../php/php-compose.html">
+            
+                    
+                    php-compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../php/php-cs.html">
+            
+                <a href="../../php/php-cs.html">
+            
+                    
+                    php-cs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../mac/mac.html">
+            
+                <a href="../../mac/mac.html">
+            
+                    
+                    mac
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../mac/mac-shortcut.html">
+            
+                <a href="../../mac/mac-shortcut.html">
+            
+                    
+                    快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../mac/xcode/xcode.html">
+            
+                <a href="../../mac/xcode/xcode.html">
+            
+                    
+                    xcode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../mac/brew/brew.html">
+            
+                <a href="../../mac/brew/brew.html">
+            
+                    
+                    brew
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../../mac/iterm2/iterm2.html">
+            
+                <a href="../../mac/iterm2/iterm2.html">
+            
+                    
+                    iterm2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../../mac/onmyzsh/onmyzsh.html">
+            
+                <a href="../../mac/onmyzsh/onmyzsh.html">
+            
+                    
+                    onmyzsh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../../mac/dash/dash.html">
+            
+                <a href="../../mac/dash/dash.html">
+            
+                    
+                    dash
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >telnet</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="telnet">telnet</h1>
+<h2 id="telnet-&#x6587;&#x6863;&#x53C2;&#x8003;">telnet-&#x6587;&#x6863;&#x53C2;&#x8003;</h2>
+<h2 id="telnet-&#x5B89;&#x88C5;">telnet-&#x5B89;&#x88C5;</h2>
+<h3 id="mac&#x5B89;&#x88C5;">mac&#x5B89;&#x88C5;</h3>
+<pre><code class="lang-bash">brew install telnet
+</code></pre>
+<h2 id="telnet-&#x5E38;&#x7528;&#x547D;&#x4EE4;">telnet-&#x5E38;&#x7528;&#x547D;&#x4EE4;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x547D;&#x4EE4;</th>
+<th>&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>telnet -v</td>
+<td>&#x67E5;&#x770B;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="telnet-&#x53C2;&#x6570;&#x8BF4;&#x660E;">telnet-&#x53C2;&#x6570;&#x8BF4;&#x660E;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>telnet -v</td>
+<td>&#x67E5;&#x770B;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; Zhi2014 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-01-03 18:09:26
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../netstat/netstat.html" class="navigation navigation-prev " aria-label="Previous page: netstat">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../netcat/netcat.html" class="navigation navigation-next " aria-label="Next page: netcat">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"telnet","level":"1.2.6","depth":2,"next":{"title":"netcat","level":"1.2.7","depth":2,"path":"command/netcat/netcat.md","ref":"command/netcat/netcat.md","articles":[]},"previous":{"title":"netstat","level":"1.2.5","depth":2,"path":"command/netstat/netstat.md","ref":"command/netstat/netstat.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","chapter-fold","code","copy-code-button","page-toc-button","-lunr","-search","search-pro","splitter","tbfed-pagefooter","theme-comscore"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Zhi2014 2023","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"page-toc-button":{"maxTocDepth":5,"minTocSize":3},"back-to-top-button":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"command/telnet/telnet.md","mtime":"2023-01-03T18:09:26.239Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-03T18:10:07.061Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
